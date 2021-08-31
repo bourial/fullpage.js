@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- fullpage.js -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['s1', 's2', 's3', 's4', 's5'],
+				sectionsColor: ['transparent', 'transparent', 'transparent','transparent', 'transparent'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['s1', 's2', 's3', 's4', 's5'],
+				responsiveWidth: 100,
+				afterResponsive: function(isResponsive){}
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+    
+      <div class="nav-menu">
+        <a href="" class="nav-link">Home</a>
+        <a href="" class="nav-link">About</a>
+        <a href="" class="nav-link">Services</a>
+        <a href="" class="nav-link">Projects</a>
+        <a href="" class="nav-link">Blog</a>
+      </div>
+      <a href="" class="nav-btn">CONTACT</a>
+    
+    </div>
+  </nav>    
+  
+
+
+  
+  
+  
+  <div id="fullpage">
+
+    <!-- hero-section -->
+    <div class="section" id="section0">
+      <div class="s">Section 1</div>
+    </div>
+
+    <!-- about1 section -->
+    <div class="section" id="section1">
+      <div class="s">Section 2</div>
+    </div>
+
+    <!-- services section -->
+    <div class="section" id="section2">
+      <div class="s">Section 3</div>
+    </div>
+
+    <!-- clients section -->
+    <div class="section" id="section3">
+      <div class="s">Section 4</div>
+    </div>
+
+    <!-- footer sedction -->
+    <div class="section" id="section5">
+      <div class="s">Section 5</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
